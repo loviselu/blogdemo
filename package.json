@@ -1,0 +1,20 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "description": "Nodejs实战课程blog项目",
+  "main": "server.js",
+  "scripts": {
+    "md2html": "node script/md2html",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sequelize": "^4.29.0",
+    "sqlite3": "^3.1.13"
+  },
+  "devDependencies": {
+    "marked": "^0.3.9",
+    "moment": "^2.20.1"
+  }
+}

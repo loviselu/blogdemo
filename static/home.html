@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Nodejs实战课程</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+		<div class="container">
+			<a class="navbar-brand" href="/">Nodejs实战课程</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+			 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				菜单
+				<i class="fa fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="/">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/posts">Posts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Page Header -->
+
+	<header class="masthead">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-10 mx-auto">
+					<div class="page-heading">
+						<h1>Nodejs实战课程</h1>
+						<span class="subheading">A Blog Theme by Start Bootstrap</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-10 mx-auto">
+				<!-- Home Post List -->
+				<div id="j-list-wrap" class="list-wrap">
+				</div>
+				<script type="text/template" id="post-tmpl">
+					<article class="post-preview">
+						<a href="/article.html?id=<%=id%>">
+							<h2 class="post-title"><%=title%></h2>
+							<h3 class="post-subtitle"><%-content%></h3>
+						</a>
+						<p class="post-meta"><%=date%></p>
+					</article>
+					<hr>
+				</script>
+				<!-- Pager -->
+				<div class="clearfix" style="display:none;">
+					<a class="btn btn-primary float-right" href="javascript:" id="j-load-more">加载更多</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<hr>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-10 mx-auto">
+					<ul class="list-inline text-center" style="display:none;">
+						<li class="list-inline-item">
+							<a href="https://www.twitter.com/SBootstrap">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://www.facebook.com/StartBootstrap">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+
+
+						<li class="list-inline-item">
+							<a href="https://github.com/BlackrockDigital">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-github fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+
+					</ul>
+					<p class="copyright text-muted">Powerby Start Bootstrap 2017</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/clean-blog.min.js"></script>
+	<script src="js/ejs.min.js"></script>
+	<script src="js/home.js"></script>
+</body>
+
+</html>
