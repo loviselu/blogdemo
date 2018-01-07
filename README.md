@@ -1,8 +1,8 @@
 # Nodejs实战课程项目
 
-##一个通过markdown文档编写的博客系统
+## 一个通过markdown文档编写的博客系统
 
-###安装
+### 安装
 
 ```
 npm install
