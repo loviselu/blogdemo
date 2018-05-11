@@ -10,7 +10,7 @@ const filelist = fs.readdirSync(dir) || []
 
 // console.log(filelist)
 
-blog.drop();
+//blog.sync();
 
 filelist.forEach(fileName=>{
 

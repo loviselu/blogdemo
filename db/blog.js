@@ -1,8 +1,16 @@
 const path = require('path');
 const Sequelize = require('sequelize');
 
-const dbPath = path.resolve(__dirname,'./blog.db');
-const sequelize = new Sequelize(`sqlite:${dbPath}`)
+const sequelize = new Sequelize('my_db', 'root', '', {
+    host: 'localhost',
+    dialect: 'mysql',
+    pool: {
+        max: 5,
+        min: 0,
+        acquire: 30000,
+        idle: 10000
+    }
+});
 
 //定义模型
 const Blog = sequelize.define('Blog', {
